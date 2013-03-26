@@ -1,0 +1,1570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- base href="http://dynamicperception.com/docs/mx2" -->
+    <title></title>
+    <script type="text/javascript" src="35_files/js_9d45119c316e6f04bfe20cfc8d1c04b6.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "thickbox": { "close": "Close", "next": "Next \x3e", "prev": "\x3c Prev", "esc_key": "or Esc Key", "next_close": "Next / Close on last", "image_count": "Image !current of !total" } });
+//--><!]]>
+</script>
+        <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="shortcut icon" href="http://dynamicperception.com/sites/all/themes/dynamicperception/dpblog/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" media="all" href="35_files/css_8cb872b0708926e364ca7e086e3542d5.css">
+  </head>
+  <body>
+        <div class="print-logo"><img src="35_files/danblog_logo.png" alt="Dynamic Perception" title="" class="print-logo" id="logo"></div>
+    <div class="print-site_name">Published on <em>Dynamic Perception</em> (<a href="http://dynamicperception.com/">http://dynamicperception.com</a>)</div>
+    <p>
+    </p><div class="print-breadcrumb"><a href="http://dynamicperception.com/">Home</a> &gt; MX2 Motion Controller User Guide</div>
+    <hr class="print-hr">
+    <h1 class="print-title"></h1>
+    <div class="print-content"><div id="node-35" class="section-1">
+  <h1 class="book-heading">MX2 Motion Controller User Guide</h1>
+  
+The MX2 Motion Controller is designed to control up to two DC motor 
+axes, while synchronizing motion with direct camera control.&nbsp; This 
+user guide covers all usage of the MX2, from basic to advanced.<br>
+<p>Choose one of the sections below to begin reading about the 
+MX2.&nbsp; If you wish to print a copy of this user guide, choosing the 
+print page option here will provide a printable version of the entire 
+guide.<br>
+</p>
+  <div id="node-422" class="section-2">
+  <h1 class="book-heading">FCC Compliance</h1>
+  <h3>FCC Compliance</h3>
+<p><span style="">This device complies with part 15 of the FCC Rules. 
+Operation is subject to the following two conditions: (1) This device 
+may not cause harmful interference, and (2) this device must accept any 
+interference received, including interference that may cause undesired 
+operation.</span></p>
+<p><span style=""> Note:   This equipment has been tested and found to 
+comply with the limits for a Class B digital device, pursuant to part 15
+ of the FCC Rules. These limits are designed to provide reasonable 
+protection against harmful interference in a residential installation. 
+This equipment generates, uses and can radiate radio frequency energy 
+and, if not installed and used in accordance with the instructions, may 
+cause harmful interference to radio communications. However, there is no
+ guarantee that interference will not occur in a particular 
+installation. If this equipment does cause harmful interference to radio
+ or television reception, which can be determined by turning the 
+equipment off and on, the user is encouraged to try to correct the 
+interference by one or more of the following measures:</span></p><span style="">  
+
+<p>—Reorient or relocate the receiving antenna.</p>
+<p>—Increase the separation between the equipment and receiver.</p>
+<p>—Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.</p>
+<p>—Consult the dealer or an experienced radio/TV technician for help.</p></span>
+
+  </div>
+<div id="node-36" class="section-2">
+  <h1 class="book-heading">Getting Started with the MX2</h1>
+  <p>In this section of the guide, we will introduce the basic concepts and familiarize ourselves with the MX2 controls.</p>
+  <div id="node-37" class="section-3">
+  <h1 class="book-heading">Interacting with the Controller</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 is designed to be extremely simple to use, and to
+ let you quickly input the most important parameters during a shoot.&nbsp; 
+This document describes the means of interacting with the controller 
+through the user interface, and how to use the main control screen.</p>
+<h2>Buttons</h2>
+<p>There are five pushbuttons, four  arranged in a cross-pattern, and  one to the lower left.&nbsp; The four  buttons together are <span style="color: #3366ff;">[Left]</span>,<span style="color: #3366ff;"> [Right]</span>, <span style="color: #3366ff;">[Up]</span> and <span style="color: #3366ff;">[Down]</span> while the button to the  lower left is the <span style="color: #3366ff;">[Enter]</span> button.</p>
+<h3>Enter:</h3>
+<ul>
+ <li>Brings  up the main menu, or selects a menu item.
+<ul>
+ <li>If  item is another  menu, that menu will be opened, otherwise the 
+value  selected will be  shown for editing, or executed depending on the
+  currently selected  item.</li>
+</ul>
+</li>
+ <li>Saves the current value being edited</li>
+ <li>Exits  manual motor control</li>
+</ul>
+<h3>Up:</h3>
+<ul>
+ <li>Selects the  menu item directly above</li>
+ <li>Increases the value of the currently  selected item</li>
+ <li>Increases motor speed (manual motor control)</li>
+</ul>
+<h3>Down:</h3>
+<ul>
+ <li>Selects  the menu item directly below</li>
+ <li>Decreases the value of the currently  selected item</li>
+ <li>Decreases motor speed (manual motor control)</li>
+</ul>
+<h3>Left:</h3>
+<ul>
+ <li>Moves  input selection left (main screen only)</li>
+ <li>Moves current motor  left (manual motor control)</li>
+</ul>
+<h3>Right:</h3>
+<ul>
+ <li>Moves  input selection right (main screen only)</li>
+ <li>Cancels value input  (when changing the value of a selected item)</li>
+ <li>Moves current motor  right (manual motor control)</li>
+</ul>
+<h2>Menus and Editing Values</h2>
+<p>When on the Main Screen, pressing the Enter button  will  draw the main menu.&nbsp; Pressing <span style="color: #3366ff;">[Enter]</span>
+ on any menu item will either draw  the  sub-menu selected or, if the 
+item selected is an input, it will be   displayed for editing. When a 
+value for editing is displayed, you may   use<span style="color: #3366ff;"> [Up] </span>and<span style="color: #3366ff;"> [Down]</span> to alter the value.&nbsp; If you wish to save the value,   simply press <span style="color: #3366ff;">[Enter]</span> again.&nbsp; To exit the editor without saving, press the <span style="color: #3366ff;">[Right]</span> button and the original value will be restored.&nbsp; The <span style="color: #3366ff;">[Right]</span>
+ button also functions as the “back” button, allowing one to go   back 
+one level from any menu, or return to the Main Screen from the   
+top-level menu.</p>
+<p>For some values that you can edit, a limited   selection of choices 
+such as ‘Up/Down’, ‘On/Off’, ‘Left/Right’ may be   displayed.&nbsp; Pressing 
+either <span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span>
+ in the edit screen will alternate   between the available values.&nbsp; For 
+some values, you may be allowed to   enter more or less than the value 
+accepts — when saving in these cases   the value will be set at its 
+minimum or maximum, and will reflect this   when next displayed.</p>
+<p>To increase or decrease a number, you can   simply hold <span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span>
+ to continue to increase or decrease the value for   as long as you hold
+ it down.&nbsp; The longer the button is held, the  faster  it increases or 
+decreases a value.&nbsp; In this manner, you may  easily  enter large 
+numbers.</p>
+<h2>Saving Input Values Permanently</h2>
+<p>When editing certain values (such as RPM for a motor axis, interval  
+time, etc.) they are automatically saved to permanent memory for you.&nbsp;  
+In this way, you will not have to make the same changes between  
+re-start.&nbsp; The values which are saved permanently are indicated in their
+  appropriate documentation.&nbsp; To wipe out permanent memory, and reset to
+  default values, choose the ‘Reset Mem’ option in the Main Settings  
+menu.</p>
+<p>Please note that direction and speed of a given axis are designed to 
+be changed regularly, and are not saved to permanent memory.</p>
+<h2>The Main Screen</h2>
+<p>The Main Screen provides an overview  of the current status and also 
+ allows for quick modification of key  operating parameters.&nbsp; This 
+screen  has the following layout:</p>
+<p style="padding-left: 60px;"><strong>
+<tt>-----------------<br>
+On 3s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [15]<br>
+R30.50%&nbsp;&nbsp; L0.00%<br>
+-----------------</tt></strong></p>
+<p style="padding-left: 60px;">
+</p>
+<p>On  the first line we have the current  status (On or Off), the  
+intervalometer timing (3s), and a count of shots  fired since turned on 
+ ([15]).&nbsp; The second line displays the direction  and speed for each  
+motor, with motor 1 on the left, and motor 2 on the  right.</p>
+<p>Pressing <span style="color: #3366ff;">[Right] </span>will advance 
+through  the values that can be  changed directly from the main screen: 
+status,  timing, direction and  speed of each motor.&nbsp; When a particular 
+value is  displayed with a  flashing cursor on it, you can change the 
+value using&nbsp;<span style="color: #3366ff;"> [Up]</span> and <span style="color: #3366ff;">[Down]</span>.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+ <li>You  may change any value when the shoot is running — it will take effect  immediately.</li>
+ <li>Motor speed can be displayed in either percentage  (%), 
+inches-per-minute (i), or cm-per-minute (c) this is configurable in the 
+Settings  menu.</li>
+ <li>Pressing <span style="color: #3366ff;">[Left]</span> will back up one setting on the  screen</li>
+ <li>Pressing <span style="color: #3366ff;">[Enter]</span> at any time when on the main screen will  bring up the Main Menu, even if program is running</li>
+</ul>
+          
+</div>
+
+
+  </div>
+<div id="node-38" class="section-3">
+  <h1 class="book-heading">Choosing the Speed Display</h1>
+  
+<div class="post">          
+            
+
+<p>With the MX2 controller, you can either display and input
+ speeds in percentages of maximum (relative) or inches per minute 
+(absolute).</p>
+<p>The speed display setting is global, and impacts all axes.&nbsp; You may 
+not configure one for relative and one for absolute speed display.</p>
+<p>If you modify the speed for a given axis while the program is running, it will immediately take effect.</p>
+<h2>Displaying in Relative Speeds (Percentage)</h2>
+<p>When displaying in relative speeds, the main screen will show a 
+floating-point number and the symbol ‘%’ on the speed value for the 
+given motor.&nbsp; You may modify this value to any value between 0 and 100% 
+as allowed by the motion control mode you are in by highlighting it 
+using the <span style="color: #3366ff;">[Right]</span> button on the main screen and then using<span style="color: #3366ff;"> [Up]</span> and <span style="color: #3366ff;">[Down]</span> to change the value.</p>
+<p><strong>To set the MX2 to display relative speeds:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter] </span>to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Motor Disp. </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down] </span>and choose&nbsp; <strong><em>PCT</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Displaying in Absolute Speeds (inches or cm)</h2>
+<p>When displaying in absolute speeds, the main screen will show a  
+floating-point number and the symbol ‘i’ (or ‘c’ if in metric mode) next
+ to the the speed value for the  given motor.&nbsp; You may modify this value
+ to any value as allowed by the motion control mode you are in by 
+highlighting it using the<span style="color: #3366ff;"> [Right] </span>button on the main screen and then using <span style="color: #3366ff;">[Up]</span> and <span style="color: #3366ff;">[Down]</span> to change the value.</p>
+<p><strong>To set the MX2 to display absolute speeds:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Motor Disp. </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> and choose&nbsp; <strong><em>IPM</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+<h2>Displaying in Metric Values</h2>
+<p>The MX2 can shows absolute distances and speeds in centimeters.&nbsp; When you enable the <em>metric mode</em>
+ parameter, all distance values stored in permanent memory are converted
+ from inches to centimeters, and the display will show a ‘c’ on the main
+ screen instead of ‘i’ for absolute speeds.</p>
+<p>You should always re-start the MX2 after enabling the&nbsp; <em>metric mode</em> parameter.</p>
+<p><strong>To set the MX2 to display metric values:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Metric Disp. </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> and choose <em><strong>On</strong></em></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+ <li>Power off the MX2 and power back on</li>
+</ol>
+          
+</div>
+          
+
+<div class="main_meta">
+            
+
+<p class="edit"><br>
+</p>
+          
+</div>
+
+
+
+  </div>
+<div id="node-39" class="section-3">
+  <h1 class="book-heading">Controlling the LCD Display</h1>
+  <div class="post">          
+            
+
+<p>The MX2 controller comes with the ability to control the 
+LCD display to reduce power consumption or light pollution onto your 
+shots at night.&nbsp; The standard LCD for the MX2 is a 16×2 character black 
+on green LCD display.&nbsp; This LCD can easily be read during bright 
+daylight without the backlight on and at night with very little 
+backlight.</p>
+<h2>Adjusting the BackLight Brightness</h2>
+<p>The backlight brightness can be dimmed by the MX2 firmware, but only when in <em>interleaved</em> motion mode.&nbsp; If you have turned on <em>continuous</em> motion mode, and run an axis below the defined <em>slow speed threshold</em>, the backlight dimmer will not work until the MX2 is re-started.&nbsp; When you have engaged in <em>continuous</em> motion at a speed under the <em>slow speed threshold</em>, the LCD will either be fully on or fully off depending on your LCD backlight settings.</p>
+<p>You can set a value between 0 and 255 for the <em>backlight level</em>.&nbsp; If you enter a value larger than 255, it will automatically be limited to 255.</p>
+<p>Like most values in the MX2 controller, the <em>backlight level</em> value is retained after power-off.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter] </span>to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Backlight </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> to adjust the backlight level value<strong></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+<h2>Turning the LCD BackLight Off Automatically</h2>
+<p>You may wish to have the backlight on while entering values, but then
+ to turn off automatically a few seconds later to reduce the power drain
+ on your batteries.&nbsp; You can configure the MX2 to turn off the backlight
+ after a number of seconds of inactivity by adjusting the <em>auto dim</em> parameter.&nbsp; The backlight will turn back on the next time a button is pressed.</p>
+<p>Enter the<em> auto dim</em> parameter value in seconds of inactivity 
+before the backlight turns off, set it to zero if you wish to disable 
+automatic dimming of the LCD backlight.</p>
+<p>Like most values in the MX2 controller, the <em>auto dim</em> value is retained after power-off.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>AutoDim </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> to adjust the auto dim value</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Disabling the Entire LCD Automatically</h2>
+<p>To save as much power as possible, the MX2 can completely disable the
+ LCD, turning off the text in addition to the backlight.&nbsp; To enable this
+ feature, enable the <em>blank lcd</em> parameter in addition to setting an <em>auto dim</em> time.&nbsp; When <em>blank lcd</em> is enabled, the LCD is turned off entirely after the number of seconds specified in the <em>auto dim </em>parameter value pass with no input via the buttons.</p>
+<p>After the LCD has been blanked, the first button you press will 
+simply re-enable the LCD to allow you to verify where you were on the 
+screen before submitting a button press and taking an unknown action.</p>
+<p>Like most values in the MX2 controller, the<em> blank lcd </em> value is retained after power-off.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Blank LCD </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to select <strong><em>on</em></strong> or <strong><em>off</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+          
+</div>
+
+  </div>
+<div id="node-40" class="section-3">
+  <h1 class="book-heading">Configuring Camera Control</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 controller provides direct control of a camera 
+through a cable connected to the remote release port of your camera.&nbsp; On
+ most cameras, there are two primary functions provided: Control Shutter
+ and Control Auto Focus.&nbsp; Here we’ll describe how to set up the MX2 to 
+handle different shooting requirements.</p>
+<p>Remember that for the camera to be controlled by the MX2, the camera 
+must be connected through its remote shutter port to the MX2 Camera port
+ using an appropriate cable.&nbsp; For some cameras, it may be required to 
+put the camera in Remote Control mode to recognize the signals from the 
+remote shutter port.</p>
+<p>All parameters indicated below are saved when the power is removed 
+from the MX2, and only need to be modified when you want to change them.</p>
+<h2>Setting the Exposure Interval</h2>
+<p>The <em>exposure interval</em> is the time between each exposure.&nbsp; 
+This value is displayed on the Main Screen, and may be set in tenths of 
+seconds (e.g. 0.2″, 1.1″, and so forth).&nbsp; It can be edited directly on 
+the main screen, or through the Camera Menu.</p>
+<p>Note that the <em>exposure interval</em> is the time between <em>triggering</em>
+ each exposure, and not necessarily the time between completing one 
+exposure and starting the next.&nbsp; The different camera delays you 
+configure, for focus tapping, exposure delay, etc. will impact your 
+actual <em>exposure interval</em> time, should they be longer than the 
+interval when summed.&nbsp; In the case where your parameters have caused the
+ interval time to be exceeded, the main screen will always display the <em>actual</em>
+ interval time, and not the time you configured.&nbsp; It will not be 
+possible to reduce the interval without first decreasing one of the 
+other camera delays you have configured.</p>
+<p>If you change the <em>exposure interval</em> while the program is running, it will take effect on the next exposure cycle.</p>
+<p>Like most values in the MX2 controller, the <em>Exposure Interval</em> value is retained after power-off.</p>
+<p><strong>Setting the Exposure Interval via the Main Screen</strong>:</p>
+<ol>
+ <li><span style="color: #3366ff;">[Right]</span> or <span style="color: #3366ff;">[Left]</span> to select the displayed interval time</li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to modify the value</li>
+</ol>
+<p><strong>Setting the Exposure Interval via the Camera Menu:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select<strong>Camera</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Interval </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> to alter the value</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Controlling Exposure Time with the MX2</h2>
+<p>The MX2 controller is capable of doing bulb exposure control.&nbsp; The shutter line will be kept engaged for as long as the <em>exposure time</em>
+ parameter is configured for.&nbsp;&nbsp; The exposure time is entered in 
+milliseconds, and may be set for as low as your camera will recognize, 
+or up to about 50 days.&nbsp; Remember that there are one thousand 
+milliseconds in a second, so if you want a one second exposure, it would
+ be entered as <em>1000</em>.</p>
+<p>Please note that different cameras have different <em>exposure time</em>
+ requirements for bulb mode, both minimum and maximum time.&nbsp; If you need
+ a controlled exposure for a shorter period of time than your camera 
+will allow in bulb mode, you must use the camera to control the exposure
+ in using its manual mode.&nbsp; You may need to experiment to discover the 
+correct minimums and maximums for your particular camera.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li>Set camera to bulb (B) mode</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Camera</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Exp. Time </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to alter the value</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right] </span>to abort</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Exp. Delay </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to set the value to <em><strong>0</strong></em></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Controlling Exposure Time on the Camera</h2>
+<p>For most cases, you’ll find it best to control the exposure on the 
+camera, using manual, or some other mode to dial in the appropriate 
+exposure time.&nbsp; Under certain conditions it will be important to tell 
+the MX2 the actual exposure time you’ve dialed in on the camera, so that
+ it does not attempt to trigger an exposure at the wrong time.&nbsp; The 
+amount of time to wait after triggering an exposure is configured via 
+the <em>exposure delay</em> value.&nbsp; This value is input in milliseconds, so one second would be entered as <em>1000</em>.</p>
+<p>To disable any delay after triggering an exposure, set the <em>exposure delay </em>value to zero.</p>
+<p>For <em>continuous motion</em> control, it is generally not necessary to set an exact <em>exposure delay</em> in the MX2 unless it exceeds your configured interval time.&nbsp; However, for <em>interleaved</em>,
+ or shoot-move-shoot, motion control, it is essential to dial in the 
+correct exposure time to prevent motor movement during the exposure.&nbsp; In
+ many cases, it is advantageous to exceed the actual exposure time 
+configured on the camera in the <em>exposure delay</em> parameter.</p>
+<p>Additionally, you should configure the <em>exposure time</em> to its minimal value to prevent unnecessary delays.&nbsp; Each camera may have a different minimum <em>exposure time</em> required to honor the request to trip the shutter.&nbsp; For many cameras 100mS is a safe bet.</p>
+<p><em>Exposure time</em> must <strong>always be greater than zero</strong> to trigger the camera.</p>
+<ol>
+ <li>Set camera to manual (M) mode</li>
+ <li>Dial in the correct exposure on the camera</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Camera</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Exp. Time </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up] </span>or <span style="color: #3366ff;">[Down] </span>to set the value to the minimum time for your camera</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right] </span>to abort</li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Exp. Delay</strong> and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to set the value</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+<h2>Limiting the Number of Frames Taken</h2>
+<p>The MX2 can automatically stop running when a certain number of frames have been exposed.&nbsp; Simply set the <em>max shots</em> parameter for the camera.</p>
+<p>Note that when ramping/feathering moves, setting the <em>max shots</em> parameter tells the MX2 when to start ramping down.</p>
+<p>Like most values in the MX2 controller, the <em>Max Shots</em> value is retained after power-off.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter] </span>to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Camera</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Max Shots </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to alter the value</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+<h2>Auto-Focus, Waking the Camera from Sleep, and Shooting in Live View</h2>
+<p>For certain conditions, the focus control line can be used to control other aspects of the camera:</p>
+<ul>
+ <li>Trip auto-focus before firing</li>
+ <li>On long interval times, put the camera into auto-sleep mode and use the focus line to wake it up before firing</li>
+ <li>For some live-view cameras, the camera may not respond to the first 
+time the exposure is tripped unless the focus line is tripped first</li>
+</ul>
+<p>The <em>focus tap</em> parameter allows you to define how long the 
+focus line should be triggered before the exposure line is triggered.&nbsp; 
+This time is input in milliseconds, and there will always be an 
+additional 1/10th second (100mS) delay after disengaging the focus line 
+before the exposure line will engage to prevent a bouncing effect being 
+perceived by the camera.</p>
+<p>It is important to set this value to the right amount required for 
+your particular camera configuration.&nbsp; Some cameras focus slower than 
+others, or require more time to wake up than others, and will require 
+that the<em> focus tap</em> value be much higher.&nbsp; Experiment with your camera and shooting conditions to determine which works best for you.</p>
+<p>To disable the focus tap functionality, set the time to zero (0) milliseconds.</p>
+<p>Like most values in the MX2 controller, the <em>Focus Tap Time</em> value is retained after power-off.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Camera</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Focus Tap </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up] </span>or <span style="color: #3366ff;">[Down]</span> to alter the value</li>
+ <li><span style="color: #3366ff;">[Enter] </span>to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Cameras that Require Focus with Shutter (many Nikons)</h2>
+<p>The MX2 is capable of controlling cameras that require that the focus
+ line be triggered along with the shutter line to trigger an exposure.&nbsp; 
+Many Nikon cameras require this, and some Canon users also report that 
+their cameras respond more reliably when the two lines are triggered 
+together.&nbsp; The <em>shutter-focus</em> parameter allows you to control this behavior.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Camera</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Shutter+Focus </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down] </span>to set the value to <em><strong>on</strong></em> or <em><strong>off</strong></em></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+          
+</div>
+  </div>
+</div>
+<div id="node-41" class="section-2">
+  <h1 class="book-heading">Basic Use</h1>
+  In this section of the user guide, we cover common topics for using the MX2 Motion Controller in the studio and in the field.
+
+  <div id="node-42" class="section-3">
+  <h1 class="book-heading">Choosing Your Motion Mode</h1>
+  
+<div class="post">          
+            
+
+<p>The two basic motion control modes for the MX2 controller are <em>Continuous Motion</em> and <em>Interleaved</em>. (Also known as <em>Shoot-Move-Shoot</em>.)&nbsp;&nbsp;
+ In Continuous Motion mode, the motor moves irrespective of the camera 
+being fired, and generally at a consistent speed.&nbsp; In Interleaved mode, 
+the motor only moves between exposures.&nbsp; These two motion control modes 
+can result in different aesthetics in your output video, and each are 
+best geared to a specific type of shooting.&nbsp; The following table will 
+help to summarize the best way to choose between the two motion types 
+based on the parameters of your shot, or the effect you wish to achieve:</p>
+<table cellpadding="0" border="0">
+<tbody>
+ <tr bgcolor="#dddddd">
+  <td><strong>Description</strong></td>
+  <td><strong>Continuous</strong></td>
+  <td><strong>Interleaved</strong></td>
+  <td><strong>Notes</strong></td>
+</tr>
+ <tr>
+  <td><em>Moderate Speed, Short Exposure</em></td>
+  <td align="center">X</td>
+  <td><br>
+</td>
+  <td>Can add a small amount of motion blur, and is easier to set up</td>
+</tr>
+ <tr bgcolor="#eeeeee">
+  <td><em>Long Exposure</em></td>
+  <td><br>
+</td>
+  <td align="center">X</td>
+  <td>If camera controls exposure, dial-in post exp. delay in MX2</td>
+</tr>
+ <tr>
+  <td><em>Very Slow Speeds</em></td>
+  <td><br>
+</td>
+  <td align="center">X</td>
+  <td>Used Fixed SMS to achieve motion over hours or days</td>
+</tr>
+ <tr bgcolor="#eeeeee">
+  <td><em>Static Subjects, Medium Exposure</em></td>
+  <td align="center">X</td>
+  <td><br>
+</td>
+  <td>Adds nice motion blur to otherwise static subjects</td>
+</tr>
+ <tr>
+  <td><em>Static Subjects Sharp, Moving Subjects Blurred</em></td>
+  <td><br>
+</td>
+  <td align="center">X</td>
+  <td>Set longest exposure time achievable</td>
+</tr>
+ <tr bgcolor="#eeeeee">
+  <td><em>Star Scenes</em></td>
+  <td align="center">X</td>
+  <td align="center">X</td>
+  <td>If moving with stars, cont. can help prevent streaking, but will reduce foreground focus on very long exposures</td>
+</tr>
+ <tr>
+  <td><em>Critical Focus, Macro, or Long Lens</em></td>
+  <td><br>
+</td>
+  <td align="center">X</td>
+  <td>Prevent movement when exposing</td>
+</tr>
+</tbody>
+</table>
+<p>Now, many photographers will use a particular mode more often than 
+another, as a matter of taste or artistic intent.&nbsp; While the table above
+ attempts to serve as a guide to when to choose between the modes, your 
+workflow or shooting style may call for a specified mode that is in 
+contradiction with the table.&nbsp; Every one is unique, and their style is 
+their own — you should practice with each mode and understand which is 
+right for you.</p>
+<p>You may only choose one motion type at a time, it is not possible to run one axis in <em>continuous motion</em> and another in <em>interleaved</em>.</p>
+<h2>Using Continuous Motion</h2>
+<p>The default behavior of the MX2 controller is to operate in <em>continuous motion</em> mode.&nbsp; For the highest end of the speed range, the control acts as a basic <em>Pulse Width Modulation</em>
+ driver, varying the speed of the motor by changing the frequency at 
+which voltage is applied to it.&nbsp; However, once the speed falls below the
+ configured slow speed floor, a special “pulsing” mode kicks in.&nbsp; In <em>pulsing</em>
+ mode, the motor is run at full speed for a brief period of time, 
+usually on the order of milliseconds, and then shut down for a period of
+ time.&nbsp; This causes the motor to operate at full torque at absolute 
+minimum speeds.&nbsp; While the motor is only moving part of the time, the 
+measured average speed over a period of time should largely approximate 
+the inches per minute (or percentage of speed) specified.</p>
+<p>In all <em>continuous motion</em> modes, you are able to choose from 
+any one of 255 different speeds, from completely stopped to moving at 
+full speed.&nbsp; As each change to the speed is a 1/255th speed change, 
+speeds will appear to make larger jumps when being entered on the main 
+screen than you might expect.</p>
+<p>At the very slowest speeds, it is generally preferable to move to <em>interleaved</em> mode, because the added vibration of the long pulses on the motor.</p>
+<p>To enable <em>Continuous Motion</em> mode:</p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Settings</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Motor Sl.Mod. </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> and choose&nbsp; <strong><em>pulse</em></strong></li>
+ <li>[Enter] to save or <span style="color: #3366ff;">[Right] </span>to abort</li>
+</ol>
+<h2>Using Interleaved Motion</h2>
+<p>There are two types of <em>interleaved</em> motion control available on the MX2: <em>Calculated</em> and <em>Fixed</em>.</p>
+<h3>Calculated Interleave Mode</h3>
+<p>In <em>calculated</em> mode, you input the distance moved in actual 
+speed (inches or cm per minute), and the distance moved between each 
+shot is determined based off of the <em>exposure interval</em> you 
+input.&nbsp; For example, if you input 1 inch per minute as your speed, and 
+your interval is set to 1 second, the axis would move 1/60th of an inch 
+between each shot.&nbsp; This mode is used when you want to easily determine 
+how fast you want to move from one point to another on the axis, and 
+generally requires little forethought to set up a shot.</p>
+<p>You may input values from 1/100th of an inch (or cm if in metric mode) to the maximum distance the motor can move in one minute.</p>
+<p>To enable <em>Calculated Interleave</em> Mode:</p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press [Enter]</li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Motor Sl.Mod. </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> and choose&nbsp; <strong><em>interleave</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter] </span>to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis <em>x </em></strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Fixed SMS</strong> and press <span style="color: #3366ff;">[Enter</span>]</li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> and choose&nbsp; <strong><em>Off</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h3>Fixed Interleave Mode</h3>
+<p>In <em>fixed</em> mode, you input the distance moved as <em>actual distance traveled</em>
+ between each exposure.&nbsp; You may input values from 1/100th of an inch 
+(or cm if in metric mode) to the maximum distance the motor can move in 
+one minute.&nbsp; This mode is used when you want to accurately dial-in 
+distances moved between exposures, or achieve very smooth ramp (feather)
+ transitions.&nbsp;&nbsp; This is generally the preferred motion control method 
+for extreme close-up shots and anything using a long telephoto lens to 
+both prevent vibration during exposure and the accurately define motion 
+from frame to frame.</p>
+<p>To enable <em>Fixed Interleave</em> Mode:</p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Motor Sl.Mod. </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> and choose&nbsp; <strong><em>interleave</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis <em>x </em></strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Fixed SMS</strong> and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> and choose&nbsp; <strong><em>On</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+          
+</div>
+          
+
+<div class="main_meta">
+            
+
+<p class="edit"><br>
+</p>
+          
+</div>
+
+
+  </div>
+<div id="node-43" class="section-3">
+  <h1 class="book-heading">Manual Motor Control</h1>
+  <div class="post">          
+            
+
+<p>Manual Motor Control can be used to position the cart on 
+the rail between moves.&nbsp; Please note, however, that for very quick 
+re-positioning of the cart, it is usually fastest to simply loosen on 
+belt clip on the rail, pull the belt away from the pulley, and position 
+the cart by hand.</p>
+<h2>Using Manual Control</h2>
+<p>While on the <em>manual control</em> screen, you can use<span style="color: #3366ff;"> [Up] </span>and<span style="color: #3366ff;"> [Down] </span>to adjust the speed of the motor, up to its max speed, and by holding <span style="color: #3366ff;">[Left]</span> or <span style="color: #3366ff;">[Right]</span> down, the motor will move in the given direction at the specified speed until the button is released.&nbsp; To exit the <em>manual control</em> screen, press <span style="color: #3366ff;">[Enter]</span>.</p>
+<p>Note that in <em>manual control</em> mode, the available speeds at 
+which the cart will move will range from about 80% to 100% of full 
+speed, at lower speeds the cart may not move.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Manual</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to select the desired axis, and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to set the desired speed</li>
+ <li>Hold<span style="color: #3366ff;"> [Right]</span> or <span style="color: #3366ff;">[Left]</span> to move in the desired direction</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to exit the manual control screen</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the main menu</li>
+</ol>
+          
+</div>
+
+  </div>
+<div id="node-44" class="section-3">
+  <h1 class="book-heading">Ramping or Feathering Into Moves</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 controller can “feather” or ramp into and out of 
+moves causing moves to start slowly and get faster within the video, 
+providing a nice accelerating or decelerating effect.&nbsp; It does this by 
+altering the distance moved between shots, or the speed moved, starting 
+with no speed and ramping up to your desired speed over a configurable 
+number of frames.&nbsp; Additionally, a lead-in or lead-out can be used to 
+add a static period before or after a motor’s movements, adding to your 
+ability to create the shot you want.</p>
+<p>Ramp settings for a particular axis are saved between power-off cycles.</p>
+<h2>Configuring Ramping</h2>
+<p>A ramp into or out of a movement is done by changing the speed or 
+distance moved based on the number of frames that have been exposed.&nbsp; 
+For example, I can set the <em>ramp value</em> for an axis to 24 frames,
+ and at 24FPS output video it would take one second for the motion in 
+the output video to come to full speed.&nbsp; This is achieved by starting 
+the motor at no speed, and then increasing the speed just enough to 
+match the desired output speed at the right interval to reach full speed
+ at the desired frame as specified in the ramp value.</p>
+<p>If you also configure the <em>max shots</em> parameter for the camera, the MX2 will automatically ramp down the motor to zero speed so that motion completes when the <em>max shots</em> count is reached.&nbsp; See <a href="http://dynamicperception.com/content/configuring-camera-control">Configuring Camera Control</a> <span class="print-footnote">[1]</span>.</p>
+<p>Note that in <em>continuous motion</em> mode, you only have 255 speed
+ increments available, this means that ramps into low speeds (1-10% of 
+maximum speed) can be rough.&nbsp; To get extremely smooth ramps, it’s best 
+to choose <em>fixed interleave</em> mode.&nbsp; See <a href="http://dynamicperception.com/content/choosing-your-motion-mode">Choosing Your Motion Mode</a> <span class="print-footnote">[2]</span> for more information.</p>
+<p>To understand how ramping will affect your output video, take the following parameter values:</p>
+<ul>
+ <li>Output video = 24 frames per second</li>
+ <li>Max shots = 240 (10 seconds)</li>
+ <li>Ramp rate = 24</li>
+ <li>Axis speed = 1 inch per minute</li>
+</ul>
+<p>The following will happen in the output video:</p>
+<ul>
+ <li>For one second, the motion will accelerate to full speed</li>
+ <li>For eight seconds, the motion will run at full speed (1 IPM)</li>
+ <li>For one second, the motor will decelerate to no speed</li>
+</ul>
+<p>This illustrates how ramping is achieved and the end result in your output video.</p>
+<p>The <em>ramp value</em> for each axis is controlled independently.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Axis </strong><em><strong>x</strong> </em>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Ramp </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> to input the number of frames to reach full speed</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort without saving</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the main menu</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the main screen</li>
+ <li><span style="color: #3366ff;">[Right]</span> as many times needed to select the desired axis speed</li>
+ <li><span style="color: #3366ff;">[Up]</span> and <span style="color: #3366ff;">[Down]</span> to adjust the desired speed</li>
+ <li><span style="color: #3366ff;">[Left] </span>to the On/Off control</li>
+ <li><span style="color: #3366ff;">[Up] </span>to start the program running</li>
+</ol>
+<p>Once the program starts running, the speed will set its self to zero 
+for any axis with a ramp value configured.&nbsp; If you stop the program 
+running before it reaches full speed, it will now see the current speed 
+as the desired speed, and you will have to increase it back to your 
+original value.</p>
+<h2>Using a Lead-in or Lead-out</h2>
+<p>A <em>lead-in</em> defines a period of time, in frames from the beginning of the shoot, that the motor should not move.&nbsp; Conversely, a <em>lead-out</em>
+ defines the period of time from the end of the shoot that the motor 
+should not move.&nbsp; Each axis can have its own lead-in and lead-out times 
+defined — however, to function, a <em>ramp value</em> must be set for 
+that axis as well.&nbsp; Leads are executed through the ramping/feathering 
+function of the controller, by simply preventing it from starting a ramp
+ before a certain number of frames have passed (in the case of a 
+lead-in), or reducing the overall number of frames counted before 
+ramping all the way down to zero (in the case of a lead-out).</p>
+<p>As with ramping/feathering, a lead-out is only used if the <em>max shots</em> parameter has been set, and therefor the controller can determine when to start reducing speed.</p>
+<p>To help clarify this function, we’ll use the same parameters from the ramping example, and add a lead-in and lead-out:</p>
+<p>take the following parameter values:</p>
+<ul>
+ <li>Output video = 24 frames per second</li>
+ <li>Max shots = 240 (10 seconds)</li>
+ <li>Ramp rate = 24</li>
+ <li>Lead-in = 24</li>
+ <li>Lead-out = 24</li>
+ <li>Axis speed = 1 inch per minute</li>
+</ul>
+<p>The following will happen in the output video:</p>
+<ul>
+ <li>For one second, no movement will occur</li>
+ <li>For one second, the motion will accelerate to full speed</li>
+ <li>For seconds seconds, the motion will run at full speed (1 IPM)</li>
+ <li>For one second, the motor will decelerate to no speed</li>
+ <li>For one second, no movement will occur</li>
+</ul>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #0000ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #0000ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press <span style="color: #0000ff;">[Enter]</span></li>
+ <li><span style="color: #0000ff;">[Down]</span> to select <strong>Lead-in </strong>or<strong> Lead-out </strong>and press<span style="color: #0000ff;"> [Enter]</span></li>
+ <li><span style="color: #0000ff;">[Up] </span>or<span style="color: #0000ff;"> [Down]</span> to input the number of frames to lead in or out with</li>
+ <li><span style="color: #0000ff;">[Enter]</span> to save or <span style="color: #0000ff;">[Right]</span> to abort without saving</li>
+</ol>
+          
+</div>
+
+
+  </div>
+<div id="node-45" class="section-3">
+  <h1 class="book-heading">Calibrating the Controller</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 controller comes pre-calibrated for a load of 
+approximately 1.5kg (~ 3.5 lbs).  This is the weight of a medium sized 
+dSLR, zoom lens, and small ball head.</p>
+<p>Calibrating is not essential to make use of the MX2 with the Stage 
+Zero Dolly for timelapse use, however it can greatly increase the 
+accuracy of specific distances you dial in when entering values in 
+inches per minute.  As the Stage Zero dolly’s motor does not have 
+feedback to the controller, the controller can only tell the motor to 
+move at certain speeds and at certain times.  Calibrating the controller
+ allows you to adjust the controller for variations in how the motor 
+behaves under different loads and at different speeds.</p>
+<p>Calibration of the motor is saved when the MX2 is powered off, so you
+ only need to re-calibrate when your payload (camera/lens/head/etc.) 
+changes in weight significantly.&nbsp; If you swap out motors or pulleys, it 
+is important to perform a calibration as well, after adjusting the motor
+ parameters to match your new combination.</p>
+<p><em>Please note that it is impossible for the MX2 to make all speeds 
+accurate at all times.&nbsp; The calibration routine will allow you to 
+dial-in one or two specific speeds more accurately than others, but as a
+ low-cost system, perfect accuracy is not achievable.</em></p>
+<h2>Adjusting the Angle of the Dolly</h2>
+<p>When operating the dolly at an angle, and using Inches Per Minute 
+(IPM) speed input, you will want to inform the controller of the nearest
+ angle of the track so that it can adjust based on the calibration for 
+that angle.&nbsp; You may set the angle of the dolly (or any other linear 
+axis) in the Axis Configuration menu for the given axis.&nbsp;&nbsp; Three angle 
+values are possible: <em>0, 45,</em> and <em>90</em>.&nbsp; The <em>0</em> degree angle corresponds to the dolly being largely in parallel to the ground, <em>45</em> degrees corresponds to the track being at a 45-degree angle to the ground, and <em>90</em>
+ degrees to being perpendicular to the ground.&nbsp; You should pick the 
+angle closest to the one you are at, and when in doubt, err on the side 
+of setting the angle higher.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Angle </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> and choose between <em>0, 45, </em>and<em> 90</em></li>
+ <li><span style="color: #3366ff;">[Enter] </span>to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Using Automatic Calibration</h2>
+<p>Automatic calibration mode adjusts the assumptions the controller 
+makes about the motor’s performance.&nbsp; By moving at different speeds, in 
+different modes, and in different directions the controller expects the 
+cart to have moved a certain distance.&nbsp; During automatic calibration, 
+you will measure the distance the cart has moved at each stage, and in 
+doing so the controller will automatically adjust its expectations of 
+the motor’s performance at critical speeds.</p>
+<p>You may calibrate the controller for each of the specified angles: <em>0, 45,</em> and <em>90</em>
+ degrees.&nbsp; Each angle must be calibrated separately, but each time you 
+calibrate, the calibration will be saved and you will not have to repeat
+ it unless your payload substantially changes, or you change out the 
+motor or main drive pulley.</p>
+<p>To use automatic calibration, first move the dolly to the middle of 
+the track, either through manual motor control or by loosening the belt 
+and moving it by hand and then make sure that the belt is tightened 
+fully before beginning. &nbsp; Now, place a ruler flat on the track in a 
+position where neither the angle mounts nor the stabilizer bar will hit 
+it, and line the edge of the ruler up with one of the edges of the 
+cart.&nbsp; The cart will be moving to the right at first, so let the ruler 
+stick out in that direction.&nbsp; For 45 degree and higher angles, it is 
+worthwhile to tape down the ruler.</p>
+<p>After selecting the angle you want to calibrate for and pressing <span style="color: #3366ff;">[Enter]</span>,
+ the cart will first move quickly to the right, and ask you to enter how
+ far it went in hundredths of an inch.&nbsp; (Don’t worry, just getting it 
+close enough in tenths is good enough for most uses.)&nbsp; Enter the value 
+using the up and down arrow keys and press enter to move to the next 
+step.&nbsp; The cart will then move to the left and repeat the process, 
+before going into two pulsing mode speed tests.&nbsp; The entire process 
+should take around 3-4 minutes.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Calibrate </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> and choose between <em>0, 45, </em>and<em> 90 </em>degree calibration modes</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to start the calibration process, or<span style="color: #3366ff;"> [Right]</span> to exit without calibrating</li>
+ <li>After the move is completed, use <span style="color: #3366ff;">[Up]</span> and <span style="color: #3366ff;">[Down]</span> to input the distance moved in inches</li>
+ <li>Press <span style="color: #3366ff;">[Enter]</span> to save the value you input and repeat five more times</li>
+ <li>After all calibration steps have been completed, use <span style="color: #3366ff;">[Right]</span> to exit the calibration screen</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ul>
+ <li>After a new calibration, you will need to adjust the <em>Calibration Constant Value</em>, which is documented below to finely tune in the calibration</li>
+ <li>If you are using your own motor/gear chain with the MX2, and the 
+calibration does not appear to move at all, adjust the low and high 
+speed targets as indicated below</li>
+</ul>
+<h2>Adjusting Calibration</h2>
+<p>The MX2′s calibration routine attempts to determine how much to 
+adjust the on time of the motor based on its performance at default 
+values.&nbsp; However, most motors behave non-linearly when adjusting their 
+speed by changing the on time.&nbsp; This means that simply adjusting the 
+on/off time alone is not enough to accurately dial in a speed that was 
+off from the expected target.&nbsp; Usually, it results in the motor going 
+much slower than expected for low speeds, as the non-linearity of the 
+motor’s behavior increases at the lowest speeds.</p>
+<p>To compensate for this, a <em>calibration constant</em> was 
+introduced in the 0.83 version of the MX2 firmware.&nbsp; This allows you to 
+configure how much of the calibration change is actually applied during 
+run time calculations.&nbsp; Generally speaking, if the motor still runs too 
+slow after calibration, the constant should be reduced, and if it runs 
+too fast the constant should be increased.</p>
+<p>The workflow for finely tuning in a particular speed is as follows:</p>
+<ol>
+ <li>Set either the low or high speed target to the desired speed (see below)</li>
+ <li>Run the auto calibration</li>
+ <li>Set <em>max shots</em> to 60</li>
+ <li>Set <em>interval</em> to 1, disable all focus and post-exposure delays</li>
+ <li>Set the desired axis to the desired angle</li>
+ <li>Set the desired axis to the desired continuous speed on the main screen</li>
+ <li>Turn the program on, and measure actual distance traveled</li>
+ <li>Adjust calibration constant</li>
+ <li>Repeat 7-8 until the speed is tightly dialed-in</li>
+</ol>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #0000ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #0000ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press<span style="color: #0000ff;"> [Enter]</span></li>
+ <li><span style="color: #0000ff;">[Down]</span> to select <strong>Cal. Constant </strong>and press <span style="color: #0000ff;">[Enter]</span></li>
+ <li><span style="color: #0000ff;">[Up] </span>or <span style="color: #0000ff;">[Down]</span> and adjust the value as desired</li>
+ <li><span style="color: #0000ff;">[Enter]</span> to save the value, or <span style="color: #0000ff;">[Right]</span> to exit without saving</li>
+</ol>
+<h2>Setting the Calibration Targets</h2>
+<p>When you want to dial-in one or two speeds to be your most accurate, 
+you should choose the speeds you use most.&nbsp; To adjust the speeds used in
+ calibration, you will need to adjust the low and <em>high calibration targets</em> to the speeds you desire.</p>
+<p>These values are set in the <em>Main Settings</em> menu.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #0000ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #0000ff;">[Down]</span> to select <strong>Settings</strong>and press <span style="color: #0000ff;">[Enter]</span></li>
+ <li><span style="color: #0000ff;">[Down]</span> to select <strong>Cal. Spd. Low </strong>or <strong>Cal Spd. Hi </strong>and press <span style="color: #0000ff;">[Enter]</span></li>
+ <li><span style="color: #0000ff;">[Up]</span> or <span style="color: #0000ff;">[Down]</span> and choose the target speed</li>
+ <li><span style="color: #0000ff;">[Enter]</span> to save the new value</li>
+ <li>Repeat calibration process as indicated above</li>
+</ol>
+<p>Like most values in the MX2 controller, the <em>Calibration Speed Targets</em> are retained after power-off.</p>
+<p><strong>Important Notes:</strong></p>
+<ul>
+ <li>The Low speed target <em>must</em> be lower than the High speed target</li>
+ <li>You must re-calibrate after changing the targets</li>
+</ul>
+<h2>Adjusting for Very Heavy Weights or Weak Motors</h2>
+<p>If you’re using the Stage Zero with a large camera/motion control 
+payload, or are using the MX2 with a DIY rig with a smaller motor, you 
+may need to adjust the minimum pulse time to give the motor enough time 
+to get the cart moving at the lowest speeds.&nbsp;&nbsp; A larger minimum pulse 
+time can make movements at low speeds rougher, so you generally want to 
+keep it as low as possible, while still being able to start moving the 
+cart forward at the lowest speed.</p>
+<p>Like most values in the MX2 controller, the Minimum Pulse value is retained after power-off.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Min Pulse </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> and<span style="color: #3366ff;"> [Down]</span> to adjust the minimum pulse time</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right] </span>to exit without saving</li>
+</ol>
+          
+</div>
+
+
+  </div>
+<div id="node-46" class="section-3">
+  <h1 class="book-heading">Shooting Stop-Motion Films</h1>
+  <div class="post">          
+            
+
+<p>Stop-Motion and Timelapse have slightly a different 
+workflow, namely in that in timelapse you want your exposures to 
+continue uninterrupted, on your set interval, for a period of time.&nbsp; 
+Whereas, in stop-motion filming, you want to control when each exposure 
+occurs so that you may make set adjustments or take other actions 
+between exposures.&nbsp; The MX2 supports both of these workflows easily.</p>
+<h2>Enabling Manual Triggering of Exposure and Motion</h2>
+<p>In stop-motion, we want to take one exposure and make one move 
+at-will, and have plenty of time to do what we need to do between 
+exposures.&nbsp; To achieve this, we’ll cause the MX2 to abort its program 
+after a single shot, and we’ll used <a href="http://dynamicperception.com/index.php?main_page=wordpress&amp;page_id=216"><em>Fixed Interleave</em> motion control</a> <span class="print-footnote">[3]</span> to establish our exact distance moved between shots.&nbsp; If we set the <em>maximum shot count</em>
+ to 1 for the camera, when the MX2 is told to to turn motion on, it will
+ expose one frame make its required move and stop until it is turned on 
+again.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Camera</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Max Shots </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> and input a value of <strong><em>1</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter] </span>to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the main menu</li>
+ <li><span style="color: #3366ff;">[Right]</span> to return to the home screen</li>
+</ol>
+<p>You should also be in the <a href="http://dynamicperception.com/index.php?main_page=wordpress&amp;page_id=216"><em>Fixed Interleave</em></a> <span class="print-footnote">[3]</span> motion mode before beginning.&nbsp; On the main screen, input the desired distance to be moved between each shot, and then use <span style="color: #3366ff;">[Left]</span> to bring the cursor back to the <em>On/Off </em>value.&nbsp;&nbsp; Pressing <span style="color: #3366ff;">[Up]</span>
+ will cause the MX2 to start running, fire a single shot, move, and then
+ stop running.&nbsp; To fire the next frame, simply press <span style="color: #3366ff;">[Up]</span> again, and so forth.</p>
+<p>If need be, you may also fashion a remote switch, connected to port <em>Ext 1</em>,&nbsp; and use this as a remote trigger to start the next exposure cycle.&nbsp; For more information see <a href="http://dynamicperception.com/index.php?main_page=wordpress&amp;page_id=284">Using Remote Inputs</a> <span class="print-footnote">[4]</span>.</p>
+          
+</div>
+
+  </div>
+<div id="node-47" class="section-3">
+  <h1 class="book-heading">Setting Motor and Drive Parameters</h1>
+  
+<div class="post">          
+            
+
+<p>Most of the motor parameters in the MX2 will never need 
+to be modified if you are using the Stage Zero dolly in the stock 
+configuration.&nbsp; These parameters are largely designed to adjust distance
+ values listed on the main screen when you input movement in inches per 
+minute.</p>
+<p>The MX2 controller displays inches per minute for linear axes by 
+relating the maximum RPM of the motor to the distance traveled by the 
+final drive gear.&nbsp; If you’re using a pulley or gear as a final output 
+drive (such as for a belt-driven system like the Stage Zero, or a 
+rack-and-pinion driven system), the distance traveled is generally the 
+pitch circumference of the gear.&nbsp; As these values effect the displayed 
+distances for movements, you should only adjust them when changing 
+something in the drivetrain.&nbsp; For calibrating different performance 
+under different loads, you should <a href="http://dynamicperception.com/index.php?main_page=wordpress&amp;page_id=208">calibrate the axis</a> <span class="print-footnote">[5]</span> instead.</p>
+<h2>Setting Motor RPM</h2>
+<p>This setting allows you to input the Revolutions Per Minute of the 
+motor you are controlling.&nbsp; This aids in determining the max speed of 
+the motor.&nbsp; If you have multiple gear transitions after the motor its 
+self, make sure to account for them in the RPM.&nbsp; For example, if you 
+have a 2:1 transition from the motor output shaft to your drive gear, 
+you would reduce RPM by one half.</p>
+<p>Do not use this setting to adjust performance of the motor under load!&nbsp; <a href="http://dynamicperception.com/index.php?main_page=wordpress&amp;page_id=208">Calibrate the axis</a> <span class="print-footnote">[5]</span> instead.</p>
+<p>Like most settings, the value is stored when powering off, and only needs to be changed when you change motors.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>RPM </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down]</span> to input the correct RPM for your motor</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort without saving</li>
+</ol>
+<h2>Setting Output Drive Distance</h2>
+<p>To allow you to enter speeds and distances in actual distance, versus
+ percentages, the MX2 must be aware of the actual distance moved per 
+revolution of the motor.&nbsp; For most linear axes, the actual distance 
+traveled will be based on the pitch circumference of the final output 
+gear — for example: the pitch circumference of a drive pulley or the 
+pitch circumference of a pinion on a rack-and-pinion drive.</p>
+<p>Like most settings, the value is stored when powering off, and only needs to be changed when you change motors.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Axis </strong><em><strong>x</strong> </em>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Dist. per Rev. </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> to input the correct pitch circumference (in inches) for your output gear</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort without saving</li>
+</ol>
+          
+</div>
+
+
+  </div>
+<div id="node-48" class="section-3">
+  <h1 class="book-heading">Reset to Defaults</h1>
+  <div class="post">          
+            
+
+<p>Sometimes it happens to the best of us: we get a little 
+carried away and then we have no idea what setting we messed up, or how,
+ and we just want to get everything back to where we started.&nbsp; The MX2 
+saves most of the values you enter into permanent memory, reducing the 
+amount of data entry you have to do for subsequent shoots, and letting 
+you store calibration and so forth.&nbsp; There is a factory reset option 
+which resets this permanent memory to its default state so that you can 
+wipe all changes clean.</p>
+<p>Resetting the permanent memory requires a restart of the MX2 
+controller, and it may take longer than normal to restart the first time
+ after resetting the memory.</p>
+<p>You should always reset the permanent memory after doing any firmware
+ upgrade.&nbsp; Retaining memory after an upgrade can result in some values 
+that cannot be modified.</p>
+<h2>Resetting Stored Memory to Defaults</h2>
+<p>To reset the permanent memory on the MX2, you will need to first enable the <em>factory reset</em> parameter, and then restart the MX2.</p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Reset Mem </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up] </span>or<span style="color: #3366ff;"> [Down] </span>and choose&nbsp; <strong><em>on</em></strong></li>
+ <li><span style="color: #3366ff;">[Enter] </span>to save the value</li>
+ <li>Power-cycle the MX2 (may start slower than normal the first time after a memory reset)</li>
+</ol>
+          
+</div>
+
+  </div>
+</div>
+<div id="node-49" class="section-2">
+  <h1 class="book-heading">Advanced Use</h1>
+  
+In this section of the guide, we will cover advanced usage for more 
+experienced users or people wishing to modify or integrate their MX2 
+with other devices.
+
+
+  <div id="node-51" class="section-3">
+  <h1 class="book-heading">Using Remote Inputs and Outputs</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 can be controlled remotely, much like it controls the camera, by using <em>Ext 1</em> inputs.&nbsp; On the left side of the MX2 controller there are two 2.5mm TRS plugs labeled <em>Ext 0</em> and <em>Ext 1</em>.&nbsp;
+ Each of these plugs breaks out into two I/O lines and one ground line, 
+which is essential for establishing communication between two electronic
+ components.</p>
+<p>The <em>Ext 0</em> inputs connect directly to the Arduino 
+microcontroller’s hardware serial pins (Digital 1 is the tip connector, 
+Digital 0 is the ring connector), and are reserved for special uses or 
+serial communication.&nbsp; The <em>Ext 1</em> inputs, however, are general purpose inputs for use in controlling the MX2 and interacting with the environment.</p>
+<p>Before we go any further, when we refer to a TRS connector and its 
+“tip,” “ring,” or “sleeve,” the following image describes which 
+conductor in the connector we’re referring to:</p>
+<p style="text-align: center;"><img class="aligncenter" style="border: 0pt none;" title="TRS connector" src="35_files/trs-connector.png" alt="" width="400" height="264"></p>
+<p>To craft your own connection to a switch, or some other device, you 
+will normally either buy a cable with a 2.5mm TRS connector on one end 
+and bare leads on the other, or buy a 2.5mm TRS to 2.5mm TRS cable and 
+cut one end off.&nbsp; Either way, make sure you accurately identify which 
+wire matches which conductor — this is a simple task that be 
+accomplished simply by using a multi-meter in “continuity” mode.&nbsp; This 
+mode tells you whether or not two test points are electrically 
+connected, in many electronic multi-meters there is an audible “beep” 
+when the two points are connected.&nbsp; Simply test every wire in the cable 
+against each conductor and label each wire as you go.</p>
+<h2><br>
+</h2>
+<h2>The Basics of MX2 Inputs and Outputs<br>
+</h2>
+<p>Before we go any further, let’s describe how the MX2 inputs work.&nbsp; As
+ we described earlier, there are two I/O lines and one GND line per 
+input connector, this means there is no 5V signal!&nbsp; In fact, when an 
+input is engaged in the MX2 firmware, it is immediately “pulled high” at
+ 20K of resistance.&nbsp; This means that the MX2 will read a 5V signal off 
+that input as long as the input is left unconnected.&nbsp; Thus, to trigger 
+the input, you will need to connect the GND signal to the input you wish
+ to trigger.&nbsp; This allows you to wire switches and other passive devices
+ easily without needing a power source.</p>
+<p>Only <em>Ext 1</em> inputs are available for triggering actions on the MX2.</p>
+<p>As the internal pull-up resistors are 20K Ohms, you must not exceed 
+19K of resistance in your cabling, otherwise the signal will not be 
+recognized.&nbsp; Limit yourself to under 20′ of 20gg wiring.</p>
+<p>All <em>Ext 1</em> inputs are automatically de-bounced for you, so 
+you can use analog switches without having to build complicated 
+de-bouncing circuitry.</p>
+<p><strong>Under no circumstances should you ever send a positive signal
+ (+V) down any Ext I/O line!&nbsp; Doing so may permanently damage your MX2!</strong></p>
+<p><br>
+</p>
+<p>As for outputs, each input port may instead be converted to outputs, 
+to trigger external devices like relays, lights, etc. As with inputs, 
+the behavior of triggering an output is to connect the given output to 
+the common GND signal. <br>
+</p>
+<p><strong><br>
+</strong></p>
+<h2>Actions Available Based On Inputs</h2><br>
+Each individual input has the following actions which can be associated with it:<br>
+<ul>
+ <li>Stop</li>
+ <li>Start</li>
+ <li>Toggle</li>
+ <li>Remote Intervalometer</li>
+</ul>
+<h2><br>
+</h2>
+<h2>Actions Available for Outputs</h2>
+<ul>
+ <li>Trigger before shot</li>
+ <li>Trigger after shot</li>
+ <li>Trigger before and after shot</li>
+</ul>The trigger times are shared between both outputs if they are configured to trigger at the same time.<br>
+<br>
+<h2>Dynamic Perception Multi-Function Switch Blocks</h2>The <a href="http://dynamicperception.com/products/multi-function-switch-block">Multi-Function Switch Blocks</a> <span class="print-footnote">[6]</span>
+ provide a quick and easy way to interact with the inputs on the MX2. 
+They can be used either as limit switches, or as remote toggles.&nbsp; 
+For information about how to configure the MX2 to work with the switch 
+blocks in a particular role, see the sections below.<br>
+<br>
+<h2>Creating Limit Switches</h2>
+<p>For limit switches, the best type to use are momentary micro switches
+ with a lever, either SPST (normally open), or SPDT (choose between 
+normally open and normally closed).&nbsp; These switches are easily 
+sourced 
+cheaply, and work very well as limit switches.&nbsp; It is important to 
+use the correct kind of switch for the correct application: the 
+"lever-style" limit switches that have an arm are designed to be placed 
+in a fixed position and the moving object should trip them by moving 
+into them; if you want to place your switches on your cart - use a 
+plunger-style switch instead.<br>
+</p>
+<p style="text-align: left;">To wire up your limit switch, connect the 
+GND lead from your cable (the Sleeve of the TRS connector) to the 
+Normally Open connector on the switch, and connect either the Ring 
+(Input 1 in the MX2 firmware) or the Tip (Input 2 in the MX2 firmware) 
+to the signal connector.&nbsp;&nbsp; Leave the normally closed contact 
+unconnected!&nbsp; Now, when the switch is depressed, the input will be 
+connected to the GND signal, and the MX2 will recognize it.</p>
+<p style="text-align: left;">When using limit switches on your cart, you
+ should generally have one on each side of the cart, to stop it from 
+moving too far in either direction.&nbsp; You can use the same input for both
+ switches to save yourself an input on the MX2, just splice in some 
+extra wires.&nbsp; The best place to locate your switches are on the cart its
+ self, either glued or fastened to the edges such that the belt clamps 
+trip the switches.&nbsp; By placing them on the cart, you will reduce the 
+amount of wiring you need to use.</p>
+<p style="text-align: left;">Remember that the Ring is Input 1 in the MX2 firmware and the Tip is Input 2 in the MX2 firmware.</p>
+<p style="text-align: left;"><strong>NOTE: The limit switch function will only work when the program is ‘on’, do NOT rely on limit switches in <em>manual motor</em> control!&nbsp; The input toggles do not apply to <em>manual motor</em> control and you must prevent over-running the belt clips by releasing the direction button before you hit them.</strong></p>
+<p style="text-align: left;">
+</p>
+<p style="text-align: left;"><strong>To configure the firmware to recognize your input as a limit switch:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong> and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Input <em>x</em> </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> to set the value to <em><strong>Stop</strong></em></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+<h2>Creating Your Own Remote Toggle Switch</h2>
+<p>You can create your own toggle switch to start and stop the program 
+from running when you press a remote button.&nbsp; Just like with limit 
+switches above, we’ll use a TRS cable to connect a momentary switch to 
+the MX2.&nbsp; For this purpose, it is better to use an SPST Momentary 
+Pushbutton (normally open) which are very easy to source and 
+inexpensive.&nbsp; Connect one of the leads to one of the input conductors 
+and the other to GND.&nbsp; Once you have configured the firmware correctly, 
+every time you press the switch, the program will start if it is 
+stopped, or stop if it is started.</p>
+<p>Some wired remotes for cameras that have a 2.5mm TRS connector may 
+work fine with the MX2, as long as they are not powered (no battery).&nbsp; 
+You may have to experiment to see which input is triggered when using 
+it.</p>
+<p><strong>To configure the firmware to recognize your input as a toggle switch:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Settings</strong> and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Input <em>x</em> </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or <span style="color: #3366ff;">[Down] </span>to set the value to <em><strong>Toggle</strong></em></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or <span style="color: #3366ff;">[Right]</span> to abort</li>
+</ol>
+          
+</div>
+
+
+
+
+  </div>
+<div id="node-52" class="section-3">
+  <h1 class="book-heading">Controlling Inexpensive Telescope Heads</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 controller is capable of controlling a low-cost 
+motorized telescope head, in addition to its two axes of DC motor 
+control.  This functionality can be used to quickly and easily add pan 
+and tilt control to your MoCo project at a very low cost.  The following
+ telescope mounts are supported:</p>
+<ul>
+ <li>Acuter Merlin</li>
+ <li>Merlin SynScan AZ GoTo</li>
+ <li>Orion Teletrack</li>
+ <li>Skywatcher Multifunction</li>
+ <li>Celestron Skywatcher ('Backpacker')<br>
+</li>
+</ul>
+<p>You’ll notice that the only difference between these mounts is the 
+name brand and the hand-controller on it.&nbsp; You do not need to buy the 
+GoTo models, as the extra cost will be unrealized (the MX2 replaces the 
+hand-controller when used with the MX2 or the Stage Zero).&nbsp; Please note 
+that these are the only officially supported telescope mounts.&nbsp; Other 
+models produced by Synta or the other name brands they market under <em>may work</em>
+ but have not been tested, and even if they do support the same 
+protocol, they may have wildly different wiring requirements that may 
+make them incompatible.&nbsp; From here on out, we will refer to these heads 
+collectively as <em>Merlin</em>.</p>
+<h2>How The Merlin Integration Works</h2>
+<p>The MX2 controller is capable of pretending to be the hand-controller
+ shipped with the telescope head.&nbsp; It is used in place of the original 
+hand controller. A special connector cable is made (instructions below),
+ and is used to connect the <em>EXT 0</em> port on the MX2 to the <em>HC</em>
+ port on the Merlin.&nbsp; Once the telescope functions have been enabled in 
+the MX2 firmware, you will now have a new manual control option labeled 
+‘Scope’, and a second home screen will be available allowing you to 
+specify the movement speeds or distances for the pan and tilt axes 
+during program execution.</p>
+<p>The MX2 communicates with the Merlin via a specially constructed 
+cable, and uses a textual serial protocol to transmit and receive 
+information from the Merlin mount.</p>
+<p>Much of the integration work is based on the great work done by <a href="http://www.guzzzt.com/" target="_blank">Gustav Evertsson</a> <span class="print-footnote">[7]</span> on his <a href="http://www.gigapixel.nu/info_project.php" target="_blank">Gigapixel Photo Rig</a> <span class="print-footnote">[8]</span> and the <a href="http://www.papywizard.org/" target="_blank">Papywizard</a> <span class="print-footnote">[9]</span>
+ group where they have been working with the Merlin heads for some 
+time.&nbsp; The MX2 firmware requires a modified version of Gustav’s 
+MerlinMount library that enables greater control of the head, and can be
+ downloaded from<a href="http://openmoco.svn.sourceforge.net/viewvc/openmoco/Arduino/Libraries/MerlinMount/trunk/" target="_blank"> OpenMoCo.org’s SVN repository</a> <span class="print-footnote">[10]</span>.</p>
+<h2>Limitations</h2>
+<p>It goes without saying, there are always some limitations, and the Merlin control has a few:</p>
+<ul>
+ <li>Ramping/feathering is not supported for the Merlin axes</li>
+ <li>You cannot upload firmware with the Merlin cable connected to the MX2</li>
+ <li>You must have the Merlin powered on and connected before attempting 
+to use any Merlin-related features, or the MX2 will lockup and require a
+ power cycle before responding</li>
+ <li>You are limited to 1/10th of a degree speed/motion inputs for the Merlin head</li>
+ <li>The Merlin head does not support <em>Calculated Interleave</em> mode, only <em>Fixed Interleave</em> and <em>Continuous</em> <a href="http://dynamicperception.com/content/choosing-your-motion-mode">motion modes</a> <span class="print-footnote">[2]</span> are supported.</li>
+ <li>You cannot perform any other Serial communications with the MX2 via the USB port when the Merlin cable is connected</li>
+ <li>You cannot use the camera port on the Merlin</li>
+ <li>The Merlin requires its own 12V power supply
+<ul>
+ <li>You can, however, use a Y-adapter for the 2.1mm power cable provided for the MX2</li>
+ <li>You can also run the Merlin off of AA batteries</li>
+</ul>
+</li>
+</ul>
+<h2>Running on USB Power Alone</h2>
+<p>If you wish to only control the Merlin and your camera with the MX2, 
+and not control other DC motors via the motor ports, you may power the 
+MX2 off of five volts via the USB cable.&nbsp;&nbsp; The Merlin will still need 
+its own power supply, either via AA batteries or a 12V DC feed to the 
+Merlin’s power input port.</p>
+<h2>Creating an Adapter Cable</h2>
+<p>To communicate with the Merlin head, you will need to create a simple cable to connect the Merlin to the MX2.&nbsp; See <a href="http://dynamicperception.com/content/create-merlin-communication-cable">Creating a Merlin Communication Cable</a> <span class="print-footnote">[11]</span> for instructions.</p>
+<p>After you have created the cable, use it to connect EXT0 with the HC port on the Merlin.</p>
+<h2>Enabling Scope Control</h2>
+<p>To be able to control the Merlin via the MX2, you must enable the 
+scope control in the firmware.&nbsp; This setting is found under the global 
+settings menu.</p>
+<p><strong>To enable <em>Scope Control</em></strong>:</p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter] </span>to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down] </span>to select <strong>Settings </strong>and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Scope </strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span> or<span style="color: #3366ff;"> [Down]</span> and choose&nbsp; <em><strong>On</strong></em></li>
+ <li><span style="color: #3366ff;">[Enter]</span> to save or<span style="color: #3366ff;"> [Right]</span> to abort</li>
+</ol>
+<h2>Manually Positioning the Merlin</h2>
+<p>Once you have enabled scope control, you will now have a new option available in the <em>manual control</em> screen labeled <em>scope</em>.&nbsp; This option enables you to control both axes of the Merlin from a single screen.</p>
+<p>Inside the <em>scope</em> manual control screen, use <span style="color: #3366ff;">[left]</span> to cause the pan (yaw) axis to start moving left, and<span style="color: #3366ff;"> [right]</span> to cause the pan axis to start moving right.&nbsp; Pressing either button again will cause the motion to stop.&nbsp;<span style="color: #3366ff;"> [up]</span> and <span style="color: #3366ff;">[down]</span> cause the tilt (pitch) axis to move either up or down, again, pressing either a second time will stop movement.</p>
+<p>Press <span style="color: #3366ff;">[enter]</span> to exit this screen and return to the main manual control screen.</p>
+<p><em>You can configure the speeds at which the pan and tilt axes move 
+in the scope manual control screen by accessing the Main Menu-&gt;Scope 
+menu, and configuring the desired manual speed, from 0.1 deg/minute, to 
+1,440 deg/minute.</em></p>
+<p><strong>Actions:</strong></p>
+<ol>
+ <li><span style="color: #3366ff;">[Enter]</span> to enter the main menu</li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Manual</strong>and press<span style="color: #3366ff;"> [Enter]</span></li>
+ <li><span style="color: #3366ff;">[Down]</span> to select <strong>Scope</strong>, and press <span style="color: #3366ff;">[Enter]</span></li>
+ <li><span style="color: #3366ff;">[Up]</span>,<span style="color: #3366ff;"> [Down]</span>, <span style="color: #3366ff;">[Left]</span>, and <span style="color: #3366ff;">[Right]</span> to position the Merlin</li>
+ <li><span style="color: #3366ff;">[Enter]</span> to exit the manual control screen</li>
+ <li><span style="color: #3366ff;">[Right] </span>to return to the main menu</li>
+</ol>
+<h2>Configuring the Merlin for Use During a Shot</h2>
+<p>Once you have enabled <em>scope control</em> in the MX2 firmware, you
+ will now have an additional home screen available.&nbsp; To access the 
+additional home screen, simply press <span style="color: #3366ff;">[Up]</span> on the home screen with no items selected, it will switch to a new screen that looks like the following:</p>
+<pre style="padding-left: 30px;">================</pre>
+<pre style="padding-left: 30px;">Off&nbsp;&nbsp;&nbsp;&nbsp; Scope</pre>
+<pre style="padding-left: 30px;">R0.0&nbsp;&nbsp;&nbsp; U0.0</pre>
+<pre style="padding-left: 30px;">================</pre>
+<p>This is the scope control screen.&nbsp;&nbsp; Like the normal home screen, you can use <span style="color: #3366ff;">[Right]</span> and<span style="color: #3366ff;"> [Left]</span>
+ to select an item to edit, the On/Off control works just as with the 
+normal home screen, starting or stopping the current shot program.&nbsp; The 
+pan axis is displayed first, and then the tilt axis, these values can be
+ modified just like the normal axis controls on the normal home screen.&nbsp;
+ You can select R for right or L for left for pan, or U for up and D for
+ down for the tilt axis.</p>
+<p>Distance values are input in tenths of degrees from 0.1 to 360.&nbsp; When in <em>continuous motion</em> mode these values indicate how many degrees to move per minute, whereas in <em>interleaved</em>
+ mode, these values indicate how many degrees to move between each 
+shot.&nbsp; Scope motion control always inherits from the global motion 
+control mode with one caveat: when in <em>interleaved </em>mode, the 
+Merlin will only operate in Fixed SMS, even no other axis is set to 
+fixed SMS.&nbsp; Additionally, ramping is not supported for the Merlin head 
+at this time.</p>
+<p>To exit the scope control screen, simply press <span style="color: #3366ff;">[Up]</span>
+ again with no values currently selected for editing.&nbsp; You may switch 
+back and forth between these home screens while the program is executing
+ without issue.</p>
+          
+</div>
+          
+
+<div class="main_meta">
+            
+
+<p class="edit"><br>
+</p>
+          
+</div>
+
+
+
+  </div>
+<div id="node-53" class="section-3">
+  <h1 class="book-heading">Create a Merlin Communication Cable</h1>
+  
+<div class="post">          
+            
+
+<p>To use the Merlin head with the MX2 controller, you will 
+need to make a simple cable to connect the two.&nbsp; This cable can be made 
+in a few minutes with a few dollars worth of parts – many of which you 
+may already have laying around.</p>
+<p><br>
+</p>
+<p><strong>For those that want to communicate with their telescope head, but do not want to take the risk of making their own cable, the <a href="http://dynamicperception.com/products/merlin-adapter-kit-mx2">Merlin Adapter Kit</a> <span class="print-footnote">[12]</span> provides a ready-to-use adapter that works right out of the box.</strong></p>
+<p><br>
+</p>
+<p>To create a cable, you will need the following parts:</p>
+<ul>
+ <li>1x RJ-12 (US Telephone) cable</li>
+ <li>1x 2.5mm TRS cable (or a TRS male plug with solder cups)</li>
+ <li>2x 220 Ohm resistors</li>
+ <li>Heat-shrink tubing or electrical tape</li>
+</ul>
+<p><strong>1:</strong> Cut the RJ-12 cable to the desired length, and 
+the same for  the TRS cable.&nbsp; A good length is about 14″ if you mount 
+the MX2 on the  Stage Zero cart, or 6′ if you intend to use the Merlin 
+as a stand-alone  device with the MX2.&nbsp; You’ll notice that the RJ-12 
+cable has the wires  twisted, such that the two plug sides of it have a 
+different order of  wires.&nbsp; Looking at the connector from the top, such 
+that the retaining  clip is facing upwards, choose the side that has the
+ Black to the far  left and the Yellow to the far right.&nbsp; (If your cable
+ uses different  colors, use the colors matching the far left and far 
+right instead of  Black and Yellow.) Strip off a few inches of the 
+protective coating  covering the RJ-12 cable, and cut away the two 
+center leads (usually red  and green). Strip off the protective coating 
+from the Black and Yellow  conductors for about an inch.&nbsp; It will be 
+easiest to construct the cable  neatly to cut the Black conductor such 
+that it is about 3/4″ longer  than the Yellow conductor.</p>
+<p align="center"><a href="http://dynamicperception.com/images/tutorials/merlincable/merlin1.png"><img title="RJ-12" src="35_files/merlin1.png" alt="" width="400" height="264"></a> <span class="print-footnote">[13]</span> <a href="http://dynamicperception.com/images/tutorials/merlincable/merlin2.png"><img title="Cut RJ-12 cable" src="35_files/merlin2.png" alt="" width="400" height="264"></a> <span class="print-footnote">[14]</span></p>
+<p><strong>2:</strong> Cut the TRS cable to length and strip away the 
+protective  coating for a few inches.&nbsp; Isolate the Tip, Ring, and Sleeve
+ conductors  (Tip is usually Red, Ring is usually White, and Sleeve will
+ often have  no sheathing, and be bare wire strands.) – strip off the 
+protective  coating of each conductor back to an inch or so.</p>
+<p align="center"><a href="http://dynamicperception.com/images/tutorials/merlincable/merlin3.png"><img title="strip TRS cable" src="35_files/merlin3.png" alt="" width="400" height="264"></a> <span class="print-footnote">[15]</span></p>
+<p><strong>3:</strong> Prepare the 2 220 Ohm resistors.&nbsp; Trim one lead from each down to about 1/3″ length.</p>
+<p align="center"><a href="http://dynamicperception.com/images/tutorials/merlincable/merlin4.png"><img title="prepare resistors" src="35_files/merlin4.png" alt="" width="400" height="264"></a> <span class="print-footnote">[16]</span></p>
+<p><strong>4:</strong> If you are using heat-shrink tubing to protect 
+your cable,  first slip a large diameter piece (1/4″), a few inches in 
+length down  the RJ-12 cable you are using.</p>
+<p><strong>5:</strong> Solder one of the resistors onto either the Tip 
+or Ring of  the TRS cable, such that the short end is soldered to the 
+conductor.&nbsp;  Place a piece of 1/8″ heat-shrink tubing over this lead 
+such that the  resistor its self, and the conductor from the TRS&nbsp; cable 
+are completely  covered, and heat to protect it.&nbsp; You do not need to 
+worry about the  other lead from the resistor.&nbsp; Repeat this step with 
+the second resistor  and the other lead from the TRS cable.</p>
+<p align="center"><a href="http://dynamicperception.com/images/tutorials/merlincable/merlin5.png"><img title="solder resistor" src="35_files/merlin5.png" alt="" width="400" height="264"></a> <span class="print-footnote">[17]</span> <a href="http://dynamicperception.com/images/tutorials/merlincable/merlin6.png"><img title="heat shrink" src="35_files/merlin6.png" alt="" width="400" height="264"></a> <span class="print-footnote">[18]</span> <a href="http://dynamicperception.com/images/tutorials/merlincable/merlin7.png"><img title="repeat for remaining resistor+lead" src="35_files/merlin7.png" alt="" width="400" height="264"></a> <span class="print-footnote">[19]</span></p>
+<p><strong>6:</strong> Twist both long leads of the resistor together, and solder to the Yellow conductor from the RJ-12 cable.</p>
+<p align="center"><a href="http://dynamicperception.com/images/tutorials/merlincable/merlin8.png"><img title="solder resistors together with signal line" src="35_files/merlin8.png" alt="" width="400" height="264"></a> <span class="print-footnote">[20]</span></p>
+<p><strong>7:</strong> Solder together the Black conductor from the RJ-12 jack and the Sleeve conductor from the TRS cable.</p>
+<p align="center"><a href="http://dynamicperception.com/images/tutorials/merlincable/merlin9.png"><img title="Solder ground lines together" src="35_files/merlin9.png" alt="" width="400" height="264"></a> <span class="print-footnote">[21]</span></p>
+<p><strong>8:</strong> Slide the large diameter heat-shrink into position, and heat it to protect the new cable connection.</p>
+<p>You now have a cable ready to use to control the Merlin!</p>
+          
+</div>
+
+
+  </div>
+<div id="node-54" class="section-3">
+  <h1 class="book-heading">Upgrading the MX2 Firmware</h1>
+  
+<div class="post">          
+            
+
+<p>The MX2 is designed to be updated with new firmware.&nbsp; You
+ can create your own, or use any newer version put out by us (or someone
+ else!).&nbsp;&nbsp; If you’re creating your own firmware or want to modify the 
+existing firmware, you’ll need to be comfortable with the Arduino IDE, 
+and then just compile and upload the <a href="http://openmoco.org/node/213" target="_blank">latest firmware</a> <span class="print-footnote">[22]</span> yourself in the Arduino IDE.</p>
+<p>However, we also provide a graphical firmware update utility that 
+makes it even easier if you don’t want to deal with anything other than 
+just installing the latest firmware.</p>
+<h2>MX2 Firmware Update Utility</h2>
+<p>The <a href="http://dynamicperception.com/software/mx2-firmware-update-utility">MX2 Firmware Update Utility</a> <span class="print-footnote">[23]</span> is a simple GUI built in <a href="http://processing.org/" target="_blank">Processing</a> <span class="print-footnote">[24]</span>
+ that lets you update to the latest firmware with just a few clicks.&nbsp; It
+ handles all of the messy bits for you, making it easy to update in just
+ a few minutes without any hassles.</p>
+<p>The <a href="http://dynamicperception.com/software/mx2-firmware-update-utility">MX2 Firmware Update Utility</a> <span class="print-footnote">[23]</span> only supports Windows, for more requirements see the <a href="http://dynamicperception.com/software/mx2-firmware-update-utility?quicktabs_softinfotab=2#quicktabs-softinfotab">System Requirements</a> <span class="print-footnote">[25]</span> for it.</p>
+<p><br>
+</p>
+<h3>Using the Firmware Update Utility</h3>
+<p>After you’ve downloaded the binary package, uncompress it and extract to any folder on your local hard drive.</p>
+<p><strong><em>Please note: at this time, the MX2Uploader does not 
+support running in a directory with a space in its name (such as ‘My 
+Documents’, etc.).&nbsp; Please place it in a directory that does not include
+ spaces, e.g.: c:\mx2hex.<br>
+</em></strong></p>
+<p><em>Always make sure that you connect the MX2 to your computer via the USB cable before running the update utility.</em></p>
+<p>Open the folder where you extracted the update utility in your file browser and click on the application named ‘MX2Uploader’.</p>
+<p>When the update utility runs, you will be greeted with this screen:</p>
+<p align="center"><img class="aligncenter" title="Firmware Update Utility Main Screen" src="35_files/screen1.png" alt="" width="400" height="408"></p>
+<p>Choose the correct Version you want to upgrade/downgrade to and the COM Port that your MX2 is on.</p>
+<p>Once you press the ‘Upload’ button, the updating process will begin, and an upload in progress indicator will be displayed.</p>
+<p align="center"><img class="aligncenter" title="Firmware Update Utility Uploading" src="35_files/screen2.png" alt="" width="400" height="404"></p>
+<p>It may take up to a few minutes to upload the new firmware.&nbsp; Your MX2
+ may display strange information on the LCD during this process.</p>
+<p>After the upload is successfully completed, the utility will display an upload complete indicator:</p>
+<p align="center"><img class="aligncenter" title="Firmware Update Utility Complete" src="35_files/screen3.png" alt="" width="400" height="404"></p>
+<p>You are now ready to run your new firmware!</p>
+<h3>Known Problems</h3>
+<ul>
+ <li><strong>The MX2 Uploader does not currently support the Arduino Uno boards</strong></li>
+</ul>
+<ul>
+ <li>If you choose the wrong COM port, you will get the following error:</li>
+</ul>
+<p align="center"><img class="aligncenter" title="Firmware Update Utility Timeout Error" src="35_files/screen4.png" alt="" width="400" height="405"></p>
+<p style="padding-left: 90px;"><em>Choose the correct COM port and try again</em></p>
+<ul>
+ <li>On some installations, you may get an error when attempting to run the MX2Uploader, stating “<em>could not locate javaw.exe</em>”
+<ul>
+ <li>To correct this issue, install the latest Java JRE: <a href="http://java.com/en/download/manual.jsp">http://java.com/en/download/manual.jsp</a> <span class="print-footnote">[26]</span></li>
+</ul>
+</li>
+</ul>
+          
+</div>
+
+
+
+
+  </div>
+</div>
+</div>
+</div>
+    <div class="print-footer">
+<div id="block-block-14" class="block ">
+
+
+  <div class="content"> <a href="http://dynamicperception.com/shipping-returns">payment, shipping, and returns</a> | 
+ <a href="http://dynamicperception.com/privacy">privacy policy</a> | 
+ <a href="http://dynamicperception.com/conditions-use">terms of use</a> | 
+ <a href="http://dynamicperception.com/distributors">distributors</a> | 
+ <a href="http://dynamicperception.com/contact">contact us</a> <br>
+
+Copyright © 2012 Dynamic Perception LLC, All Rights Reserved.
+</div>
+</div>
+<div id="block-block-18" class="block ">
+
+
+  <div class="content">/*{literal}&lt;",i,' onl' + 'oad="var 
+d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"&gt;"].join("")}var
+ i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var 
+j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[
+ 
+]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var
+ d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var 
+t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader:
+ 
+"static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/*
+ custom configuration goes here (www.olark.com/documentation) */
+olark.identify('7179-934-10-8962');/*]]&gt;{/literal}*/<a href="https://www.olark.com/site/7179-934-10-8962/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com/?welcome" title="Olark live chat software">Olark live chat software</a>
+        </div>
+</div>
+</div>
+    <hr class="print-hr">
+    <div class="print-source_url"><strong>Source URL (retrieved on <em>2013-03-26 15:24</em>):</strong> <a href="http://dynamicperception.com/docs/mx2">http://dynamicperception.com/docs/mx2</a></div>
+    <div class="print-links"><p><strong>Links:</strong><br>[1] http://dynamicperception.com/content/configuring-camera-control<br>
+[2] http://dynamicperception.com/content/choosing-your-motion-mode<br>
+[3] http://dynamicperception.com/index.php?main_page=wordpress&amp;amp;page_id=216<br>
+[4] http://dynamicperception.com/index.php?main_page=wordpress&amp;amp;page_id=284<br>
+[5] http://dynamicperception.com/index.php?main_page=wordpress&amp;amp;page_id=208<br>
+[6] http://dynamicperception.com/products/multi-function-switch-block<br>
+[7] http://www.guzzzt.com/<br>
+[8] http://www.gigapixel.nu/info_project.php<br>
+[9] http://www.papywizard.org/<br>
+[10] http://openmoco.svn.sourceforge.net/viewvc/openmoco/Arduino/Libraries/MerlinMount/trunk/<br>
+[11] http://dynamicperception.com/content/create-merlin-communication-cable<br>
+[12] http://dynamicperception.com/products/merlin-adapter-kit-mx2<br>
+[13] http://dynamicperception.com/images/tutorials/merlincable/merlin1.png<br>
+[14] http://dynamicperception.com/images/tutorials/merlincable/merlin2.png<br>
+[15] http://dynamicperception.com/images/tutorials/merlincable/merlin3.png<br>
+[16] http://dynamicperception.com/images/tutorials/merlincable/merlin4.png<br>
+[17] http://dynamicperception.com/images/tutorials/merlincable/merlin5.png<br>
+[18] http://dynamicperception.com/images/tutorials/merlincable/merlin6.png<br>
+[19] http://dynamicperception.com/images/tutorials/merlincable/merlin7.png<br>
+[20] http://dynamicperception.com/images/tutorials/merlincable/merlin8.png<br>
+[21] http://dynamicperception.com/images/tutorials/merlincable/merlin9.png<br>
+[22] http://openmoco.org/node/213<br>
+[23] http://dynamicperception.com/software/mx2-firmware-update-utility<br>
+[24] http://processing.org/<br>
+[25] http://dynamicperception.com/software/mx2-firmware-update-utility?quicktabs_softinfotab=2#quicktabs-softinfotab<br>
+[26] http://java.com/en/download/manual.jsp<br>
+</p></div>
+      
+
+</body></html>
